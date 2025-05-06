@@ -6,6 +6,18 @@ AI News is a modern web application that delivers AI-generated summaries of news
 
 👉 https://ai-news-frontend.onrender.com
 
+##🧠 Approach
+The project follows a clean separation between frontend and backend, using the Gemini API to generate AI summaries. Here's how it works:
+
+### 1.Frontend (Client)
+Built using React, Vite, TypeScript, and Mantine UI. It presents a user-friendly interface for reading AI-generated news summaries and an admin panel for managing articles.
+
+### 2.Backend (Server)
+Built with Node.js and Express. It receives article content from the frontend and communicates with the Gemini API to generate summaries.
+
+### 3.Gemini API Integration
+The backend sends the article content to the Gemini API using a prompt, receives an AI-generated summary, and sends it back to the frontend to display to users.
+
 ## 📁 Project Structure
 ```bash
 ai-news/
