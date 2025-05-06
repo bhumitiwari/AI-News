@@ -44,6 +44,7 @@ In a new terminal window run:
    npm run dev
 ```
 
-
+The frontend will be available at: http://localhost:5173
+Your site is live!!
 
 
