@@ -26,7 +26,7 @@ export default function App() {
 
   const fetchArticles = async () => {
     try {
-      const res = await axios.get('https://ai-news-backend-k2y3.onrender.com/api/articles');
+      const res = await axios.get('http://localhost:5000/api/articles');
       setArticles(res.data);
       console.log('Fetched Articles:', res.data); 
     } catch (error) {
@@ -41,7 +41,7 @@ export default function App() {
 
   const getSummary = async (id) => {
     try {
-      const res = await axios.get(`https://ai-news-backend-k2y3.onrender.com/api/summary/${id}`);
+      const res = await axios.get(`http://localhost:5000/api/summary/${id}`);
       console.log('Summary Response:', res.data);
       if (res.data.summary) {
         setSelectedSummary(res.data.summary);
@@ -56,7 +56,7 @@ export default function App() {
 
   const handleAdd = async () => {
     try {
-      await axios.post('https://ai-news-backend-k2y3.onrender.com/api/articles', newArticle);
+      await axios.post('http://localhost:5000/api/articles', newArticle);
       setNewArticle({ title: '', content: '' });
       fetchArticles();
     } catch (error) {
@@ -66,7 +66,7 @@ export default function App() {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`https://ai-news-backend-k2y3.onrender.com/api/articles/${id}`);
+      await axios.delete(`http://localhost:5000/api/articles/${id}`);
       fetchArticles();
     } catch (error) {
       console.error('Error deleting article:', error);
