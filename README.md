@@ -7,10 +7,12 @@ AI News is a modern web application that delivers AI-generated summaries of news
 👉 https://ai-news-frontend.onrender.com
 
 ## 📁 Project Structure
+```bash
 ai-news/
-├── client/ # Frontend - React + Vite + TypeScript + Mantine
-├── server/ # Backend - Node.js + Express + Gemini API
+├── client/       # Frontend - React + Vite + TypeScript + Mantine
+├── server/       # Backend - Node.js + Express + Gemini API
 └── README.md
+```
 
 ## ⚙️ Getting Started
 
@@ -22,17 +24,25 @@ cd ai-news
 ```
 ### 2. Backend Setup
 In the terminal run:
+```bash
    cd server
    npm install
+```
 Create a .env file in the server folder and add your Gemini API key:
+```bash
    GEMINI_API_KEY=your_gemini_api_key_here
-In the terminal run
-   node index.js
+```
+In the terminal run:
+```bash
+  node index.js
+```
 ### 3. Frontend Setup
 In a new terminal window run:
+```bash
    cd client
    npm install
    npm run dev
+```
 
 
 
